@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,0,122,1);
+  -webkit-animation: colorCycle infinite 40s;
+  animation: colorCycle infinite 40s;
+  overscroll-behavior: none;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+h2, p, a, button, input, li {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  color: white;
+  width: 60%;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin: 40px auto 0 auto;
+  text-align: right;
+}
+
+.background-image {
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  background: url('./assets/blue-wall.jpg') center center no-repeat;
+  background-size: cover;
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.App-header {
+  width: 100vw;
+  text-align: center;
+  color: white;
+}
+
+.App-title {
+  font-size: 5em;
+  font-weight: normal;
+  line-height: 80%;
+  margin: 20px 0 0 0;
+}
+
+.App-tagline {
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 15px 0;
+}
+
+section {
+  box-sizing: border-box;
+  width: 60%;
+  border: white 5px solid;
+  background: rgba(255,255,255,.8);
+  margin: 0 auto 50px auto;
+  padding: 20px;
+  overflow: auto;
+}
+
+.author-photo {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: url("./assets/becky-robison.jpeg") center center no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.author-text {
+  /* float: right; */
+}
+
+.NavBar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background: linear-gradient(transparent, rgba(51, 243, 255, .6) 30%);
+  /* background: linear-gradient(transparent, rgba(255, 255, 255, .4) 30%); */
+  height: 45px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 0 20px;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+a:hover {
+  color: rgba(255,0,122,1);
+  text-decoration: underline;
+}
+
+.copyright {
+  font-weight: bold;
+  color: white;
+}
+
+@keyframes colorCycle {
+  0% {
+    background: rgba(255,0,122,1);
+  }
+  20% {
+    background: rgba(255,184,0,1);
+  }
+  40% {
+    background: rgba(0,255,140,1);
+  }
+  60% {
+    background: rgba(0, 151, 255, 1);
+  }
+  80% {
+    background: rgba(227,52,199,1);
+  }
+  100% {
+    background: rgba(255,0,122,1);
+  }
+}
+
+@-webkit-keyframes colorCycle {
+  0% {
+    background: rgba(255,0,122,1);
+  }
+  20% {
+    background: rgba(255,184,0,1);
+  }
+  40% {
+    background: rgba(0,255,140,1);
+  }
+  60% {
+    background: rgba(0, 151, 255, 1);
+  }
+  80% {
+    background: rgba(227,52,199,1);
+  }
+  100% {
+    background: rgba(255,0,122,1);
+  }
+}
