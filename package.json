@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Author website for Becky Robison",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "start": "node server.js"
+  },
   "keywords": [],
   "author": "Leta Keane",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
