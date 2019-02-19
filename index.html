@@ -36,7 +36,7 @@
       <div class="author-photo" alt="Becky Robison sitting in a field of wildflowers"></div>
       <p class="section-text author-text">Becky Robison writes novels, short stories, and flash fiction.</p>
       <p class="section-text author-text">The first book she ever wrote was a 100 page collection of stories called <i>Ghost, Spooks, and Other Scary Things</i>, written and illustrated in the second grade with her best friend.</p>
-      <p class="section-text author-text">Since then, Becky has continued to create. Becky holds an MFA in Creative Writing from the University of Nevada, Las Vegas. Her work ranges from horror-tinged flash fiction to coming-of-age YA novels that meditate on identity, queerness, and beliefs. </p>
+      <p class="section-text author-text">Since then, Becky has continued to create. Becky holds an MFA in Creative Writing from the University of Nevada, Las Vegas. Her work ranges from horror-tinged flash fiction to coming-of-age YA novels that meditate on identity, queerness, and the beliefs we think we hold and the ones that really drive us. </p>
       <p class="section-text author-text"></p>
     </section>
 
@@ -49,7 +49,15 @@
     <a name="contact"></a>
     <h2>CONTACT</h2>
     <section class="Contact">
-
+      <form id="contact-form" action="https://formspree.io/beckyr003@gmail.com" method="post">
+        <label for="name">Your name</label>
+        <input type="text" aria-label="your name" name="name" placeholder="What should I call you?" required>
+        <label for="email">Your email</label>
+        <input type="email" aria-label="your email" name="_replyto" placeholder="email@example.com" required>
+        <label for="message">Your message</label>
+        <textarea type="text" aria-label="your message" form="contact-form" name="message" placeholder="What's on your mind?" required></textarea>
+      </form>
+      <button type="submit">SEND</button>
     </section>
 
   </div>
