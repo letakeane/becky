@@ -24,11 +24,11 @@ h2, label, p, a, button, input, li, textarea {
 
 h2 {
   color: white;
-  width: 60%;
+  width: 55%;
   font-size: 40px;
   font-weight: normal;
   letter-spacing: 5px;
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
   text-align: right;
 }
 
@@ -76,8 +76,8 @@ section {
   box-sizing: border-box;
   width: 55%;
   border: white 5px solid;
-  background: rgba(255,255,255,.85);
-  margin: 0 auto 50px auto;
+  background: rgba(255,255,255,.9);
+  margin: 0 auto 150px auto;
   padding: 20px;
   overflow: auto;
 }
@@ -98,11 +98,10 @@ section {
   background: url("./assets/becky-robison.jpeg") center center no-repeat;
   background-size: cover;
   float: left;
-  margin-right: 20px;
-}
-
-.author-text {
-  /* float: right; */
+  margin-right:2rem;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
 }
 
 form {
