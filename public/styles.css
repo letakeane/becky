@@ -45,6 +45,8 @@ h2 {
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
+/* ********** HEADER STYLING ********** */
+
 .App-header {
   display: flex;
   align-items: center;
@@ -72,12 +74,14 @@ h2 {
   margin: 15px;
 }
 
+/* ********** SECTION STYLING ********** */
+
 section {
   box-sizing: border-box;
   width: 55%;
   border: white 5px solid;
   background: rgba(255,255,255,.9);
-  margin: 0 auto 150px auto;
+  margin: 0 auto 20vh auto;
   padding: 20px;
   overflow: auto;
 }
@@ -89,6 +93,8 @@ section {
 .section-text, label {
   color: #0C1247;
 }
+
+/* ********** AUTHOR STYLING ********** */
 
 .author-photo {
   display: inline-block;
@@ -103,6 +109,12 @@ section {
   -webkit-shape-outside:circle();
   shape-outside:circle();
 }
+
+/* ********** PUBLICATIONS STYLING ********** */
+
+
+
+/* ********** CONTACT STYLING ********** */
 
 form {
   display: flex;
